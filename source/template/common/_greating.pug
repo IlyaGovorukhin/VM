@@ -1,0 +1,56 @@
+.wrapper
+    .center
+        .center_up
+            .center_up-left
+               h3 Кошелек пользователя
+               form.class_form
+                       .block
+                           .mony_item-form 1руб
+                           .counter_item-form 10штук
+                           input.input_item-form(value='0', name='counter_1', required='')
+                       .block
+                           .mony_item-form 2руб
+                           .counter_item-form 10штук
+                           input.input_item-form(value='0', name='counter_2', required='')
+                       .block
+                           .mony_item-form 5руб
+                           .counter_item-form 10штук
+                           input.input_item-form(value='0', name='counter_5', required='')
+                       .block
+                           .mony_item-form 10руб
+                           .counter_item-form 10штук
+                           input.input_item-form(value='0', name='counter_10', required='')
+                       button.buttonform Внести
+            .center_up-middle
+                h3 Внесенная сумма
+                p.center_up-middle-p
+            .center_up-right
+                h3 Кошелек VM
+                form.class_formVM
+                    .block
+                        .mony_item-formVM 1руб
+                        .counter_item-formVM 100штук
+                    .block
+                        .mony_item-formVM 2руб
+                        .counter_item-formVM 100штук
+                    .block
+                        .mony_item-formVM 5руб
+                        .counter_item-formVM 100штук
+                    .block
+                        .mony_item-formVM 10руб
+                        .counter_item-formVM 100штук
+                    button.buttonformVM Сдача
+        .center_down
+            .center_down-item
+                a.center_down-item--a#tea Чай 13 руб
+                p.center_down-item--p 10 порций
+            .center_down-item
+                a.center_down-item--a#coffee  Кофе 18 руб
+                p.center_down-item--p 20 порций
+            .center_down-item
+                a.center_down-item--a#late  Кофе с молоком 21 руб
+                p.center_down-item--p 20 порций
+            .center_down-item
+                a.center_down-item--a#juice  Сок 35 руб
+                p.center_down-item--p 15 порций
+    include ../common/modal

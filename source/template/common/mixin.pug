@@ -1,0 +1,9 @@
+mixin formAll(className, items)
+    form(class= "class_" + className)
+        if (items)
+            each item, ndx in items
+                .block
+                    div(class="mony_item-" + className)=ndx +"руб"
+                    div(class= "counter_item-" + className)=item.count+"штук"
+                    input(class ="input_item-" +className  value=0  name="counter_"+ndx required)
+        button(class="button" + className )= 'Ok'

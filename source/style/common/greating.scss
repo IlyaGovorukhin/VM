@@ -1,0 +1,122 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  @include flex_center-colum();
+}
+
+.center {
+  height: rem(396);
+  overflow: hidden;
+  border-radius: rem(7);
+  background: #cccccc;
+
+  @include wide {
+    width: rem(700);
+  }
+
+  @include desktop {
+    width: rem(700);
+  }
+  @include laptop {
+    width: rem(700);
+  }
+  @include tablet {
+    width: rem(700);
+  }
+  @include phone {
+    width: rem(600);
+  }
+}
+.center_up, .center_down {
+  width: 100%;
+  height: 50%;
+}
+.center_up {
+  @include flex_center-row();
+}
+.center_up-left,
+.center_up-middle,
+.center_up-right {
+  flex-grow: 1;
+  height: 100%;
+  max-width: 33.33%;
+}
+.block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.input_item-form {
+  width: 30%;
+}
+.center_up-left p, .center_up-right p{
+  margin: 0;
+}
+.center_up-middle {
+  @include flex_center-colum();
+}
+.center_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.center_down-item{
+  width: rem(150);
+  height: rem(100);
+}
+.center_down-item--a {
+  display: block;
+  text-align: center;
+   width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  padding-top: 16%;
+  cursor: pointer;
+  background-color: #515151;
+}
+
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+
+}
+
+
+.modal_center {
+  width: rem(280);
+  height: rem(130);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: rem(-65) 0 0 rem(-140) ;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.modal_center-button {
+  margin-top: rem(20);
+  padding: 0.85rem 1.15rem;
+  background-color: #515151;
+  color: #fff;
+  line-height: 1rem;
+  display: inline-block;
+  padding: 0.85rem 1.65rem;
+  text-align: center;
+  border-radius: 0.35714285rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
